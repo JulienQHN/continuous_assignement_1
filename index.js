@@ -14,7 +14,7 @@ const client = new MongoClient(url, { useUnifiedTopology: true });
 
 const dbName = "JulienQHN";
 
-// Permit to use (req) et (res)
+// Permit to use all the Http requests and allow to use (req) and (res)
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 
